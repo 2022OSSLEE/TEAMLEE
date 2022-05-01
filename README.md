@@ -10,6 +10,8 @@
 잊고 싶지 않은 영화를 영원히 기억하고 싶다면,    
 보고 싶었던 영화를 기록하고 싶다면,    
 나만의 영화첩을 이용해보세요.    
+## Image
+<img width="663" alt="스크린샷 2022-05-01 19 28 17" src="https://user-images.githubusercontent.com/103708164/166142064-2121ba49-6cf4-41cd-90e9-8798807978f3.png">
 
 ## 함수 기능 설명    
 createMovie(Movie *m); // 영화 정보 추가    
