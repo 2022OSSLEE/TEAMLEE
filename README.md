@@ -3,7 +3,7 @@
 ## Topic    
 영화 정보 관리 프로그램    
 
-##Introduction    
+## Introduction    
 기억하고 싶은 영화를 기록하는 나만의 영화첩    
 
 *영화 제목, 장르, 감독, 제작국가, 한줄평 등의 영화 정보를 관리하는 프로그램이다.*    
@@ -11,7 +11,7 @@
 보고 싶었던 영화를 기록하고 싶다면,    
 나만의 영화첩을 이용해보세요.    
 
-##함수 기능 설명    
+## 함수 기능 설명    
 createMovie(Movie *m); // 영화 정보 추가    
 readMovie(Movie m); // 하나의 영화 정보 출력    
 updateMovie(Movie *m); // 영화 하나 수정    
@@ -23,11 +23,11 @@ saveData(Movie m[], int count); // 영화 저장하기
 loadData(Movie *m); // 저장된 영화 불러오기    
 searchMovie(Movie *m, int count); // 영화 검색    
 
-##개발환경 및 언어    
+## 개발환경 및 언어    
 *개발환경* : Github    
 *언어* : C언어    
 
-##팀소개 및 팀원이 맡은 역할    
+## 팀소개 및 팀원이 맡은 역할    
 *팀명* : TEAM_LEE    
 *팀원 소개*     
   member1     
