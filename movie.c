@@ -1,3 +1,5 @@
+#include <stdio.h>
+#include <string.h>
 #include "movie.h"
 
 int createMovie(Movie *m) {
@@ -50,7 +52,7 @@ int updateMovie(Movie *m) {
     return 0;
 }
 
-void readMoive(Moive m){
+void readMovie(Movie m){
     printf("%3s %7s %7s %7d %7s\n", m.name, m.gamdog, m.type, m.c, m.intro);
 }
 
