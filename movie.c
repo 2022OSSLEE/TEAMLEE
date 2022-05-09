@@ -57,7 +57,7 @@ int selectMenu(){
     return menu;
 }
 
-void listProduct(Product *p,int count){
+void listMovie(Movie *m,int count){
 
     printf("\nNo. Name          director	장르	 제작국가	 한줄평\n");
     printf("================================\n");
