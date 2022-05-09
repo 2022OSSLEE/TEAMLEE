@@ -8,11 +8,9 @@ int createMovie(Movie *m) {
     fgets(m->name, SIZE, stdin);
     m->name[strlen(m->name) - 1] = '\0';
     printf("감독: ");
-    getchar();
     fgets(m->gamdog, SIZE, stdin);
     m->gamdog[strlen(m->gamdog) - 1] = '\0';
     printf("장르: ");
-    getchar();
     fgets(m->type, SIZE, stdin);
     m->type[strlen(m->type) - 1] = '\0';
     printf("제작국가(1: 한국영화 2: 외국영화) : ");
@@ -33,11 +31,9 @@ int updateMovie(Movie *m) {
     fgets(m->name, SIZE, stdin);
     m->name[strlen(m->name) - 1] = '\0';
     printf("감독: ");
-    getchar();
     fgets(m->gamdog, SIZE, stdin);
     m->gamdog[strlen(m->gamdog) - 1] = '\0';
     printf("장르: ");
-    getchar();
     fgets(m->type, SIZE, stdin);
     m->type[strlen(m->type) - 1] = '\0';
     printf("제작국가(1: 한국영화 2: 외국영화) : ");
