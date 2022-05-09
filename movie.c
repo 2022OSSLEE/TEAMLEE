@@ -70,5 +70,5 @@ void listProduct(Product *p,int count){
 }
 
 void readMoive(Moive m){
-    printf("%s %s %s %d %s\n", m.name, m.gamdog, m.type, m.c, m.intro);
+    printf("%3s %7s %7s %7d %7s\n", m.name, m.gamdog, m.type, m.c, m.intro);
 }
