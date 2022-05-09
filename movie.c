@@ -56,3 +56,15 @@ int selectMenu(){
     scanf("%d", &menu);
     return menu;
 }
+
+int listMoive(Movie *m[], int count) {
+    printf("no %-10s %-5s %-5s %-5s %-5s\n","영화제목", "", "제품설명", "가격", "배송방법(1-새벽/2-택배)");
+    printf("--------------------------------------------------------\n");
+    for(int i=0;i<count;i++)
+    {
+        if(p[i]->price==-1) continue;
+        printf("%2d ",i+1);
+        readProduct(*p[i]);
+    }
+    return 0;
+}
