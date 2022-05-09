@@ -57,14 +57,18 @@ int selectMenu(){
     return menu;
 }
 
-int listMoive(Movie *m[], int count) {
-    printf("no %-10s %-5s %-5s %-5s %-5s\n","영화제목", "", "제품설명", "가격", "배송방법(1-새벽/2-택배)");
-    printf("--------------------------------------------------------\n");
-    for(int i=0;i<count;i++)
-    {
-        if(p[i]->price==-1) continue;
-        printf("%2d ",i+1);
-        readProduct(*p[i]);
+void listProduct(Product *p,int count){
+
+    printf("\nNo. Name          director	장르	 제작국가	 한줄평\n");
+    printf("================================\n");
+    for(int i=0; i<count; i++){
+        if( m[i].c == -1 ) continue;
+        printf("%2d.", i+1);
+        readMovie(&m[i]);
     }
-    return 0;
+    printf("\n");
+}
+
+void readMoive(Moive m){
+    printf("%s %s %s %d %s\n", m.name, m.gamdog, m.type, m.c, m.intro);
 }
