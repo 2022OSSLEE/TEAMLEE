@@ -24,7 +24,7 @@ int selectMenu(){
 }
 
 void listMovie(Movie *m,int count){
-    printf("\nNo. Name          director        장르     제작국가        한줄평\n");
+    printf("\nNo. Name    director   장르   제작국가  한줄평\n");
     printf("================================\n");
     for(int i=0; i<count; i++){
         if( m[i].c == -1 ) continue;
