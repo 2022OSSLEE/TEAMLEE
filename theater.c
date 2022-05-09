@@ -34,8 +34,7 @@ int main(void){
                 		if(deleteMovie(&mlist[no-1])) count --;       
             		}		 
 		}
-
-		printf("\n종료됨!\n");
 	}
+	printf("\n종료됨!\n");
 	return 0;
 }
