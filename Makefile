@@ -1,7 +1,7 @@
 CC = gcc
 CFLAGS = -W -Wall
 TARGET = mov
-OBJECTS = theater.c manager.o movie.c
+OBJECTS = theater.c manager.o movie.o
 all : $(TARGET)
 
 $(TARGET) : $(OBJECTS)
