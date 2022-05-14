@@ -33,3 +33,18 @@ void listMovie(Movie *m,int count){
     }
     printf("\n");
 }
+
+void saveData(Movie *m[], int count) {// FILE에 제품 목록을 저장하는 함수
+    FILE *fp;
+    fp = fopen("movie.txt", "wt");
+
+    for(int i=0; i<count; i++) {
+        if(m[i]->c == -1) continue;
+        fprintf(fp, "%s %s %s %d %s\n", m[i]->name, m[i]->gamdog, m[i]->type, m[i]->c, m[i]->intro);
+    }
+
+    fclose(fp);
+
+    printf("=> 저장됨!\n");
+}
+
