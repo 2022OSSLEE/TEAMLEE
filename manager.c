@@ -69,3 +69,26 @@ int loadData(Movie *m){
 	printf("=> 로딩 성공!\n");
         return count;
 }
+
+void searchMovie(Movie *m[], int count) {
+	int* scnt = 0;
+	int search[100];
+
+	printf("검색할 영화제목은? ");
+	getchar();
+	fgets(search, 100, stdin);
+	search[strlen(search) - 1] = '\0';
+
+	printf("==================================\n");
+	for(int i=0; i<count; i++) {
+		if(m[i] == NULL) continue;
+		if(strstr(m[i]->name, search) {
+			printf("%2d", i+1);
+			readMovie(*m[i]);
+			scnt++;
+			}
+		}
+	}
+	if(scnt == 0) printf("=> 검색된 데이터 없음!");
+	printf("\n");
+}
