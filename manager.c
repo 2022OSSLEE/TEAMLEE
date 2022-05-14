@@ -48,3 +48,19 @@ void saveData(Movie *m[], int count) {// FILE에 제품 목록을 저장하는 �
     printf("=> 저장됨!\n");
 }
 
+int loadData(Movie *m){
+	int count = 0;
+	FILE*fp;
+	
+	fopen(fp,"movie.txt", "rt");
+	int i;
+	for(; i<100; i++){
+		fscanf(fp,
+
+	}
+	
+	fclose(fp);
+
+	printf("=> 로딩 성공!\n");
+        return count;
+}
