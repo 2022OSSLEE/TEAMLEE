@@ -18,6 +18,8 @@ int selectMenu(){
     printf("2. 추가\n");
     printf("3. 수정\n");
     printf("4. 삭제\n");
+    printf("5. 저장\n");
+    printf("6. 검색\n");
     printf("0. 종료\n\n");
     printf("=> 원하는 메뉴는? ");
     scanf("%d", &menu);
@@ -35,13 +37,13 @@ void listMovie(Movie *m,int count){
     printf("\n");
 }
 
-void saveData(Movie *m[], int count) {// FILE에 제품 목록을 저장하는 함수
+void saveData(Movie *m, int count) {// FILE에 제품 목록을 저장하는 함수
     FILE *fp;
     fp = fopen("movie.txt", "wt");
 
     for(int i=0; i<count; i++) {
-        if(m[i]->c == -1) continue;
-        fprintf(fp, "%s %s %s %d %s\n", m[i]->name, m[i]->gamdog, m[i]->type, m[i]->c, m[i]->intro);
+        if(m[i].c == -1) continue;
+        fprintf(fp, "%s %s %s %d %s\n", m[i].name, m[i].gamdog, m[i].type, m[i].c, m[i].intro);
     }
 
     fclose(fp);
@@ -71,7 +73,7 @@ int loadData(Movie *m){
         return count;
 }
 
-void searchMovie(Movie *m[], int count) {
+void searchMovie(Movie *m, int count) {
 	int* scnt = 0;
 	char search[100];
 
@@ -82,10 +84,10 @@ void searchMovie(Movie *m[], int count) {
 
 	printf("==================================\n");
 	for(int i=0; i<count; i++) {
-		if(m[i] == NULL) continue;
-		if(strstr(m[i]->name, search)) {
+		if(m[i].c == -1) continue;
+		if(strstr(m[i].name, search)) {
 			printf("%2d", i+1);
-			readMovie(*m[i]);
+			readMovie(m[i]);
 			scnt++;
 		}
 	}
