@@ -55,7 +55,12 @@ int loadData(Movie *m){
 	fopen(fp,"movie.txt", "rt");
 	int i;
 	for(; i<100; i++){
-		fscanf(fp,
+		fscanf(fp,"%s",m->name);
+    		if(feof(fp)) break;
+   		fscanf(fp,"%s",m->gamdog);
+    		fscanf(fp,"%s",m->type);
+		fscanf(fp,"%d",&m->c);
+		fscanf(fp,"%s",m->intro);
 
 	}
 	
