@@ -8,6 +8,9 @@ int main(void){
     int curcount=0;
     int count = 0, menu; 
 
+    count = loadData(mlist);
+    curcount = count;
+
 	while(1) {
     		menu = selectMenu();
         	if(menu == 0) break;
@@ -33,6 +36,10 @@ int main(void){
             		if(deleteok == 1) {
                 		if(deleteMovie(&mlist[no-1])) count --;       
             		}		 
+		} else if(menu == 5) {
+			saveData(mlist, curcount);
+		} else if(menu == 6) {
+			searchMovie(mlist, curcount);
 		}
 	}
 	printf("\n종료됨!\n");
