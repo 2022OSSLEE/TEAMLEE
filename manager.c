@@ -52,7 +52,7 @@ int loadData(Movie *m){
 	int count = 0;
 	FILE*fp;
 	
-	fopen(fp,"movie.txt", "rt");
+	fp = fopen("movie.txt", "rw");
 	int i;
 	for(; i<100; i++){
 		fscanf(fp,"%s",m->name);
