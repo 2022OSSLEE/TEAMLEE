@@ -5,4 +5,4 @@ void listMovie(Movie *m,int count);
 int selectDataNo(Movie *m, int count);
 
 void saveData(Movie *m[], int count);
-int loadData(Moive *m);
+int loadData(Movie *m);
