@@ -82,15 +82,15 @@ void searchMovie(Movie *m, int count) {
 	fgets(search, 100, stdin);
 	search[strlen(search) - 1] = '\0';
 
-	printf("==================================\n");
+	printf("======================================================\n");
 	for(int i=0; i<count; i++) {
 		if(m[i].c == -1) continue;
 		if(strstr(m[i].name, search)) {
-			printf("%2d", i+1);
+			printf("%-2d", i+1);
 			readMovie(m[i]);
 			scnt++;
 		}
 	}
 	if(scnt == 0) printf("=> 검색된 데이터 없음!");
-	printf("\n");
+	printf("\n";
 }
